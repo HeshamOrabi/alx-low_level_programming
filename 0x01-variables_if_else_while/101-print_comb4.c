@@ -19,7 +19,7 @@ int main(void)
 				putchar(i + '0');
 				putchar(u + '0');
 
-				if (n == 8 && i == 9)
+				if (n == 7 && i == 8 && u == 9)
 				{
 					continue;
 				}
