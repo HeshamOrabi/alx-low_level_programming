@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * print_sign - is a function to print a sign og a number
+ * _abs - is a function to get the absolute
  * @n: the integer number to check
- * Return: 1 if n >  zero, 0 if n == zero, and -1 if n < zero
+ * Return: -n if n < zero, else return n
 */
 int _abs(int n)
 {
