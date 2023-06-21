@@ -7,7 +7,7 @@
 */
 int main(void)
 {
-	fibonacci(98);
+	fibonacci_un(98);
 	return (0);
 }
 
