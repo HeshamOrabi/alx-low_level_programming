@@ -27,6 +27,7 @@ void fibonacci(int n)
 			printf("%ld, ", next);
 		} else if (i == n - 1)
 		{
+			next = fNum + sNum;
 			printf("%ld\n", next);
 		} else
 		{
