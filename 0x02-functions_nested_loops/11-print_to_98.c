@@ -3,7 +3,7 @@
 
 
 	/**
-	 * print_to_98 - prints all natural numbers from n 
+	 * print_to_98 - prints all natural numbers from n
 	 * @n: print from this number
 	 * Return: no return value
 	 */
