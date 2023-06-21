@@ -1,15 +1,15 @@
 #include "main.h"
 
 /**
- *
- *
- *
+ * print_times_table - print a table of thimes to number given
+ * @n: number to be given
+ * Return:Nothingis returned
 */
 void print_times_table(int n)
 {
-	int i, j,k;
+	int i, j, k;
 
-	if (n > 0 && n < 15)
+	if (n >= 0 && n < 15)
 	{
 		for (i = 0; i < n + 1; i++)
 		{
