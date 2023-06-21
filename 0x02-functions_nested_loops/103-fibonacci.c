@@ -22,7 +22,7 @@ int main(void)
 */
 int fibonacci_sum(int n)
 {
-	int i, fNum = 1, sNum = 1, next = 0, sum = 0;
+	int fNum = 1, sNum = 1, next = 0, sum = 0;
 
 	while (next <= n)
 	{
