@@ -17,6 +17,7 @@
 	void print_times_table(int n);
 	int natural(int n);
 	void fibonacci(int n);
+	int fibonacci_sum(int n);
 
 #endif
 
