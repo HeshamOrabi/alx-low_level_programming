@@ -15,7 +15,7 @@ int main(void)
  * fibonacci - generate the Fibonacci sequence up to n
  * @n: the number of terms to generate
 */
-void fibonacci(int n)
+void fibonacci(unsigned long int n)
 {
 	unsigned long int i, fNum = 1, sNum = 1, next = 0;
 
