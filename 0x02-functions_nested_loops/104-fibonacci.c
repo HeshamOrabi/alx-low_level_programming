@@ -12,7 +12,7 @@ int main(void)
 }
 
 /**
- * fibonacci - generate the Fibonacci sequence up to n
+ * fibonacci_un - generate the Fibonacci sequence up to n
  * @n: the number of terms to generate
 */
 void fibonacci_un(unsigned long int n)
