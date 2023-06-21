@@ -24,7 +24,7 @@ int main(void)
 */
 int natural(int n)
 {
-	int i, sum;
+	int i, sum = 0;
 
 	for (i = 0; i < n; i++)
 	{
