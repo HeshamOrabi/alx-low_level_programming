@@ -18,7 +18,7 @@
 	int natural(int n);
 	void fibonacci(int n);
 	int fibonacci_sum(int n);
-	void fibonacci(unsigned long int n);
+	void fibonacci_un(unsigned long int n);
 
 #endif
 
