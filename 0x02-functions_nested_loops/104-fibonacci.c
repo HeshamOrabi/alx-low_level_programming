@@ -17,22 +17,22 @@ int main(void)
 */
 void fibonacci(int n)
 {
-	long int i, fNum = 1, sNum = 1, next = 0;
+	unsigned long int i, fNum = 1, sNum = 1, next = 0;
 
 	for (i = 0; i < n; i++)
 	{
 		if (i == 0)
 		{
 			next = 1;
-			printf("%ld, ", next);
+			printf("%lu, ", next);
 		} else if (i == n - 1)
 		{
 			next = fNum + sNum;
-			printf("%ld\n", next);
+			printf("%lu\n", next);
 		} else
 		{
 			next = fNum + sNum;
-			printf("%ld, ", next);
+			printf("%lu, ", next);
 			fNum = sNum;
 			sNum = next;
 		}
