@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * _isupper - to check upper case
- * @c: int represent ASCII
- * Return: 1 if upper and 0 otherwise
+ * _isdigit - to check if digit
+ * @c: int to check
+ * Return: 1 if digit and 0 otherwise
 */
 
 int _isdigit(int c)
