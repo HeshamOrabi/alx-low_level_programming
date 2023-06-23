@@ -1,7 +1,8 @@
 #include "main.h"
 
 /**
- *
+ * print_number - print with recursive function call
+ * @n: number to be printed
 */
 void print_number(int n)
 {
