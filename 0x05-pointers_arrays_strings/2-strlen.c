@@ -1,9 +1,8 @@
 #include "main.h"
 
 /**
- * swap_int - swap the values of tow integers
- * @a: addr that point first val
- * @b: addr that point to second val
+ * _strlen - get str lenth
+ * @s: first addr of array
 */
 int _strlen(char *s)
 {
