@@ -3,6 +3,7 @@
 /**
  * _strlen - get str lenth
  * @s: first addr of array
+ * Return: lenth of str
 */
 int _strlen(char *s)
 {
