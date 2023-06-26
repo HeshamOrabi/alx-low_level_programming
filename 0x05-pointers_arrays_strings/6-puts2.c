@@ -1,6 +1,8 @@
-#inclube "main.h"
+#include "main.h"
 
 /**
+ * puts2 - print only spasific char of str
+ * @str: char arry str
 */
 void puts2(char *str)
 {
