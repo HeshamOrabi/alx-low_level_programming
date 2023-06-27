@@ -8,6 +8,7 @@ void puts2(char *str)
 {
 	int i, j, len;
 
+	len = 0;
 	for (i = 0; str[i] != 0; i++)
 	{
 		len++;
@@ -17,7 +18,7 @@ void puts2(char *str)
 	{
 		if (j % 2 == 0)
 		{
-			_putchar(str[j] + '0');
+			_putchar(str[j]);
 		}
 		else
 		{
