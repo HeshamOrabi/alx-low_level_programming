@@ -1,6 +1,8 @@
 #include "main.h"
 
 /**
+ * puts_half - printthe last half of str
+ * @str: str pointer
 */
 void puts_half(char *str)
 {
