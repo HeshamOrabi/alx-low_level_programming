@@ -2,6 +2,9 @@
 #include <stdio.h>
 
 /**
+ * print_array - print array with commas
+ * @a: pointer of str
+ * @n: int num
 */
 void print_array(int *a, int n)
 {
