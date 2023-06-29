@@ -8,28 +8,20 @@
  *
  * Return: pointer to the destination string
  */
-char *_strncpy(char *dest, char *src, int n)
+
+char *_strncpy(char *dest, const char *src, int n)
 {
-	int i, j, len;
+	int i;
 
-	len = 0;
-	for (i = 0; src[i] != '\0'; i++)
+	for (i = 0; src[i] != '\0' && i < n; i++)
 	{
-		len++;
-	}
-
-	for (j = 0; src[j] != '\0' && j < n; j++)
-	{
-		dest[j] = src[j];
+		dest[i] = src[i];
 	}
 
-	if (n < len)
+	for (; i < n; i++)
 	{
-		return (dest);
+		dest[i] = '\0';
 	}
-	else
-	{
-		dest[j] = '\0';
-	}
+
 	return (dest);
 }
