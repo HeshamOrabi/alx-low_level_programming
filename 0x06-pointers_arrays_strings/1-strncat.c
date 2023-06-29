@@ -8,27 +8,23 @@
  *
  * Return: dest str
 */
+
 char *_strncat(char *dest, char *src, int n)
 {
 	int i, j, len;
 
+	len = 0;
 	for (i = 0; dest[i] != '\0'; i++)
 	{
 		len++;
 	}
 
-	for (j = 0; src[j] != '\0'; j++)
+	for (j = 0; src[j] != '\0' && j < n; j++)
 	{
-		if (j < n)
-		{
-			dest[j + len] = src[j];
-		}
-		else
-		{
-			dest[j + len] = '\0';
-			break;
-		}
+		dest[len + j] = src[j];
 	}
+
+	dest[len + j] = '\0';
 
 	return (dest);
 }
