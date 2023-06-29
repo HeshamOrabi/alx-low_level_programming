@@ -8,5 +8,6 @@
 	char *string_toupper(char *str);
 	char *cap_string(char *str);
 	char *leet(char *str);
+	int _strcmp(char *s1, char *s2);
 
 #endif
