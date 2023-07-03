@@ -4,6 +4,6 @@ git add .
 
 read -p "Enter your commit massege: " M
 
-git commit -m '$M'
+git commit -m "$M"
 
 git push
