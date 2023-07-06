@@ -1,6 +1,6 @@
 #include "main.h"
 
-int _root_sqrt(int raiz, int cont);
+int _rootSqr(int raiz, int cont);
 
 /**
  * _sqrt_recursion - function that returns the natural square root of a number
