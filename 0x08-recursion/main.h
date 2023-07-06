@@ -10,5 +10,9 @@
 	int is_prime_number(int n);
 	int newPrime(int n, int i);
 	int _putchar(char c);
+	int is_palindrome(char *s);
+	int is_palindrome(char *s);
+	int getLen(char *s);
+	int paliHelp(char *s, int st, int fin);
 
 #endif
