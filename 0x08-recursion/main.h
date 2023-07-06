@@ -14,5 +14,6 @@
 	int is_palindrome(char *s);
 	int getLen(char *s);
 	int paliHelp(char *s, int st, int fin);
+	int wildcmp(char *s1, char *s2);
 
 #endif
