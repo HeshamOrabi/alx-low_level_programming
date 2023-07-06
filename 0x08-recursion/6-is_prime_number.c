@@ -1,6 +1,5 @@
 #include "main.h"
 
-int newPrine(int n, int i);
 
 /**
  * is_prime_number - Checks if a given integer is a prime number.
