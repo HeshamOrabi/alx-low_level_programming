@@ -3,8 +3,7 @@
 
 /**
  * is_prime_number - Checks if a given integer is a prime number.
- * @param n The integer to check.
- * @return 1 if the integer is prime, 0 otherwise.
+ * @n The integer to check.
  *
  * Return: 0 if not prime and 1 if primre using the helper function
 */
@@ -17,7 +16,7 @@ int is_prime_number(int n)
 		return (0);
 	}
 
-	return newPrime(n, i);
+	return (newPrime(n, i));
 }
 
 /**
