@@ -43,7 +43,7 @@ int getLen(char *s)
  * @st: The start index of the string.
  * @fin: The end index of the string.
  *
- * Return 1 if the string is a palindrome, 0 otherwise.
+ * Return: 1 if the string is a palindrome, 0 otherwise.
 */
 int paliHelp(char *s, int st, int fin)
 {
