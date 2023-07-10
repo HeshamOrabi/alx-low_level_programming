@@ -8,7 +8,7 @@
  *
  * Return: 0 on success, 1 on error
 */
-int main (int argc,char *argv[])
+int main(int argc, char *argv[])
 {
 	int n, i, nOfC;
 	int arr[] = {25, 10, 5, 2, 1};
