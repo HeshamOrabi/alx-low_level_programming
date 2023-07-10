@@ -28,9 +28,9 @@ int main(int argc, char *argv[])
 	}
 
 	nOfC = 0;
-	for (i = 0; i < 5; i++)
+	for (i = 0; i < 5 && n >= 0; i++)
 	{
-		while (n <= arr[i])
+		while (n >= arr[i])
 		{
 			nOfC++;
 			n -= arr[i];
