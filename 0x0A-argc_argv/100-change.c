@@ -15,7 +15,7 @@ int main(int argc, char *argv[])
 
 	if (argc != 2)
 	{
-		printf("Error");
+		printf("Error\n");
 		return (1);
 	}
 
@@ -37,6 +37,6 @@ int main(int argc, char *argv[])
 		}
 	}
 
-	printf("%d", nOfC);
+	printf("%d\n", nOfC);
 	return (0);
 }
