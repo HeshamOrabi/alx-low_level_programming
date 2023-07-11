@@ -25,7 +25,6 @@ char *_strdup(char *str)
 	{
 		newstr[i] = str[i];
 	}
-	newstr[i] = putchar('\n');
 
 	return (newstr);
 }
