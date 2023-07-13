@@ -4,7 +4,7 @@
 
 /**
  * malloc_checked - allocate memory
- * @d: num aof int
+ * @b: num aof int
  *
  * Return: a void pointer or 98 if fail
 */
@@ -16,7 +16,7 @@ void *malloc_checked(unsigned int b)
 
 	if (tmp == NULL)
 	{
-		return (98);
+		exit(98);
 	}
 	else
 	{
