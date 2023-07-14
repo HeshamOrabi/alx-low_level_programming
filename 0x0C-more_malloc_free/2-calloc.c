@@ -12,6 +12,7 @@
 */
 char *_memset(char *s, char d, unsigned int n)
 {
+	unsigned int i;
 
 	for (i = 0; i < n; i++)
 	{
@@ -31,7 +32,6 @@ char *_memset(char *s, char d, unsigned int n)
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	char *arr;
-	unsigned int i;
 
 	if (nmemb == 0 || size == 0)
 		return (NULL);
