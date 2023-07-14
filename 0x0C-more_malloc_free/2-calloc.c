@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include <stdlib.h>
 #include "main.h"
 
@@ -9,39 +8,40 @@
  * @n: number of times to copy b
  *
  * Return: pointer to the memory area s
-*/
-char *_memset(char *s, char d, unsigned int n)
+ */
+char *_memset(char *s, char b, unsigned int n)
 {
 	unsigned int i;
 
 	for (i = 0; i < n; i++)
 	{
-		s[i] = d;
+		s[i] = b;
 	}
 
 	return (s);
 }
 
 /**
- * *_calloc - allocates memory 
- * @nmemb: count of elements 
- * @size: size of element
+ * *_calloc - allocates memory for an array
+ * @nmemb: number of elements in the array
+ * @size: size of each element
  *
  * Return: pointer to allocated memory
-*/
+ */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	char *arr;
+	char *ptr;
 
 	if (nmemb == 0 || size == 0)
 		return (NULL);
 
-	arr = malloc(size * nmemb);
+	ptr = malloc(size * nmemb);
 
-	if (arr == NULL)
+	if (ptr == NULL)
 		return (NULL);
 
-	_memset(arr, 0, nmemb * size);
+	_memset(ptr, 0, nmemb * size);
 
-	return (arr);
+	return (ptr);
 }
+
