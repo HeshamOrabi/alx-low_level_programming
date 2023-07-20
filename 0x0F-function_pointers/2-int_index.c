@@ -5,6 +5,7 @@
  * @array: array
  * @size: size of elements in array
  * @cmp: pointer to func of one of the 3 in main
+ * Return: index in arr, or -1 if num not found
 */
 int int_index(int *array, int size, int (*cmp)(int))
 {
