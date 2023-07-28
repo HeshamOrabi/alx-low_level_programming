@@ -1,15 +1,12 @@
 section .text
 	global _start
+	extern printf
 _start:
-	mov edx, len
-	mov ecx, msg
-	mov ebx, 1
-	mov eax, 4
-	int 0x80
-
-	mov eax, 1
-	int 0x080
+	mov edi, msg
+	xor eax, eax
+	call printf
+	mov eax, 0
+	ret
 
 section .data
 	msg db "Hello, Holberton",0xa
-	len equ $ -msg
