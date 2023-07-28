@@ -9,4 +9,4 @@ _start:
 	ret
 
 section .data
-	msg db "Hello, Holberton",0xa
+	msg db `Hello, Holberton\n`,0
