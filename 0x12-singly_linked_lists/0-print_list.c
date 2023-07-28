@@ -11,11 +11,12 @@ size_t print_list(const list_t *h)
 	int i;
 	size_t count = 0;
 
+	if (h == NULL)
+		return (0);
 	while (h)
 	{
 		count++;
 		i = 0;
-
 		if (h->str)
 		{
 			_putchar('[');
@@ -23,7 +24,6 @@ size_t print_list(const list_t *h)
 			_putchar(']');
 			_putchar(' ');
 		}
-
 		if (!h->str)
 		{
 			_putchar('[');
