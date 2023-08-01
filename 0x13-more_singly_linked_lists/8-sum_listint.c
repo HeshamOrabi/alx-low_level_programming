@@ -11,6 +11,11 @@ int sum_listint(listint_t *head)
 	int sum;
 	listint_t *temp;
 
+	if (!head)
+	{
+		return (0);
+	}
+
 	temp = head;
 	while (temp)
 	{
