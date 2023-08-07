@@ -26,9 +26,9 @@ int main(int argc, char *argv[])
 	fd_source = open(argv[1], O_RDONLY);
 	fd_dist = open(argv[2], O_WRONLY | O_TRUNC | O_CREAT, 0664);
 	buff = create_buff(argv[2]);
+	cr = read(fd_source, buff, 1024);
 
 	do {
-		cr = read(fd_source, buff, 1024);
 		if (cr == -1 || fd_source == -1)
 		{
 			dprintf(2, "Error: Can't read from file %s\n", argv[1]);
@@ -44,6 +44,7 @@ int main(int argc, char *argv[])
 			exit(99);
 		}
 
+		cr = read(fd_source, buff, 1024);
 		fd_dist = open(argv[2], O_WRONLY | O_APPEND);
 	} while (cr > 0);
 
@@ -84,7 +85,7 @@ char *create_buff(char *argv)
 {
 	char *cp;
 
-	cp = malloc(1024);
+	cp = malloc(sizeof(char) * 1024);
 	if (cp == NULL)
 	{
 		dprintf(2, "Error: Can't write to %s\n", argv);
