@@ -19,7 +19,7 @@ int main(int argc, char *argv[])
 
 	if (argc != 3)
 	{
-		dprintf(2, "Usage: cp file_from file_to\n");
+		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
 		exit(97);
 	}
 
@@ -31,7 +31,7 @@ int main(int argc, char *argv[])
 		cr = read(fd_source, buff, 1024);
 		if (cr == -1 || fd_source == -1)
 		{
-			dprintf(2, "Error: Can't read from file %s\n", argv[1]);
+			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 			free(buff);
 			exit(98);
 		}
@@ -39,7 +39,7 @@ int main(int argc, char *argv[])
 		cw = write(fd_dist, buff, cr);
 		if (cw == -1 || fd_dist == -1)
 		{
-			dprintf(2, "Error: Can't write to %s\n", argv[2]);
+			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 			free(buff);
 			exit(99);
 		}
@@ -67,7 +67,7 @@ int edit_close(int fd)
 	cc = close(fd);
 	if (cc == -1)
 	{
-		dprintf(2, "Error: Can't close fd %d\n", fd);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd);
 		exit(100);
 	}
 
@@ -87,7 +87,7 @@ char *create_buff(char *argv)
 	cp = malloc(sizeof(char) * 1024);
 	if (cp == NULL)
 	{
-		dprintf(2, "Error: Can't write to %s\n", argv);
+		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv);
 		exit(99);
 	}
 
