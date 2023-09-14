@@ -6,6 +6,14 @@
 #include <string.h>
 #include <stdio.h>
 
+/**
+ * struct dlistint_t - Doubly linked list node structure
+ * @n: Integer data stored in the node
+ * @next: Pointer to the next node in the list
+ * @prev: Pointer to the previous node in the list
+ *
+ * Description: This structure represents a node in a doubly linked list.
+*/
 typedef struct dlistint_t
 {
 	int n;
