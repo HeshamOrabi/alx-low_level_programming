@@ -1,4 +1,3 @@
-#include <Python.h>
 
 /**
  * add - Adds two integers.
