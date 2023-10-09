@@ -24,21 +24,17 @@ void free_node(hash_node_t *node)
  */
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
-	hash_node_t *hn;
+	hash_node_t *hn, *tmp;
 	unsigned long int index;
-	hash_node_t *tmp;
 
 	if (!ht)
 		return (0);
-
 	hn = malloc(sizeof(hash_node_t));
 	if (!hn)
 		return (0);
-
 	hn->key = strdup((char *)key);
 	hn->value = strdup((char *)value);
 	hn->next = NULL;
-
 	index = key_index((unsigned char *)key, ht->size);
 
 	if (!(ht->array[index]))
