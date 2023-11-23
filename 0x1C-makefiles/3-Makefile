@@ -9,10 +9,10 @@ RM = rm -f
 all: ${NAME}
 
 clean:
-	rm -f *~ ${NAME}
+	${RM} *~ ${NAME}
 
 oclean:
-	rm -f main.o ${NAME}
+	${RM} main.o ${NAME}
 
 fclean: clean oclean
 
