@@ -1,0 +1,26 @@
+#!/usr/bin/make
+
+CC = gcc
+SRC = main.c school.c
+OBJ = ${SRC:.c=.o}
+NAME = school
+
+all: ${NAME}
+
+clean:
+	rm -f *~ ${NAME}
+
+oclean:
+	rm -f main.o ${NAME}
+
+fclean:
+	rm -f *~ school
+	rm -f main.o school.o
+
+re: clean all
+
+${NAME}: ${OBJ}
+	${CC} ${OBJ} -o ${NAME}
+
+%.o:%.c
+	${CC} -c -o $@ $<
