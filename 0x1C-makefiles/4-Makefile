@@ -1,0 +1,24 @@
+#!/usr/bin/make
+
+CC = gcc
+SRC = main.c school.c
+OBJ = ${SRC:.c=.o}
+NAME = school
+RM = rm -f
+CFLAGS = -Wall -Werror -Wextra -pedantic
+
+all: ${OBJ} make.h
+	${CC} ${CFLAGS} ${SRC} -o ${NAME}
+
+%.o: %.c
+	${CC} ${CFLAGS} -c -o $@ $<
+
+clean:
+	${RM} *~ ${NAME}
+
+oclean:
+	${RM} *~ ${OBJ}
+
+fclean: clean oclean
+
+re: fclean all
