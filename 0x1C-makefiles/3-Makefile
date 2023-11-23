@@ -4,6 +4,7 @@ CC = gcc
 SRC = main.c school.c
 OBJ = ${SRC:.c=.o}
 NAME = school
+RM = rm -f
 
 all: ${NAME}
 
@@ -13,9 +14,7 @@ clean:
 oclean:
 	rm -f main.o ${NAME}
 
-fclean:
-	rm -f *~ school
-	rm -f main.o school.o
+fclean: clean oclean
 
 re: clean all
 
